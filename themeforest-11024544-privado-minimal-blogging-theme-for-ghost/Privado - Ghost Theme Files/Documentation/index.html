@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Privado - Ghost Theme Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#structure">Theme Structure</a></li>
+            <li><a href="#quickstart">Quickstart</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div id="home" class="starter-template">
+        <h1>Privado - Responsive Ghost Theme Documentation</h1>
+        <p class="lead">Thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!.</p>
+
+        <p>
+          <code>        
+            Version : 1.0 | Compatibility : Ghost 0.5.x | Last Update : April 5, 2015
+          </code>
+        </p>
+
+        <div class="row"><img src="assets/images/preview.png"></div> <br> <br>
+        <div class="row">
+          <a href="https://privado-codetic.rhcloud.com/" class="btn btn-info btn-lg" target="_blank">Demo</a>
+          <a href="http://themeforest.net/user/Codetic" class="btn btn-success btn-lg" target="_blank">Purchase</a>
+        </div>
+      </div>
+
+
+    <section id="structure">
+
+      <h1>Theme Structure</h1>
+      <p>Here's a rough overview of the theme file structure.</p>
+
+      <pre>
+        |-- /assets
+            |--css [Style Sheets]
+               |-- bootstrap.css [Twitter Bootstrap Library]
+               |-- style.css [Main CSS for theme]
+               |-- responsive.css [Media Queries for all devices]
+
+            |--img [images that used inside theme]
+            |--js [JavaScript Files]
+               |-- instafeed.js [JS for Instagram Feed on sidebar]
+               |-- jQuery-2.1.1.js [jQuery Library File]
+               |-- jquery.fitvids.js [JS for fitting video well inside posts]
+               |-- scripts.js [Main Theme JS file]
+
+        |-- partials [part templates, see: http://docs.ghost.org/themes/]
+            |-- footer.hbs [Page footer]
+            |-- loop.hbs [For post query]
+            |-- navigation.hbs [Navigation menu template]
+            |-- pagination.hbs [Pagination template]
+            |-- prealoder.hbs [Page preloader template]
+            |-- sidebar.hbs [Sidebar template]
+
+        |-- author.hbs [For author page]
+        |-- default.hbs [Ghost default, see: http://docs.ghost.org/themes/]
+        |-- error.hbs [For 404 error page]
+        |-- home.hbs [Main Home template]
+        |-- index.hbs [Default template]
+        |-- package.json [Contains Theme information]
+        |-- page.hbs [Single static page template]
+        |-- post.hbs [Single post template]
+        |-- tag.hbs [Tag Page template]
+      </pre>
+
+      <p>If you need to edit your theme. See the description above of each file and find your one to edit.</p>
+    </section> 
+
+    <section id="quickstart">
+      <h1>Quick Start Guide</h1>
+      <hr>
+
+  <p>NOTE: This assumes you have <a href="https://ghost.org/">Ghost</a> installed. For help installing <a href="https://ghost.org/">Ghost</a> check out <a href="http://www.howtoinstallghost.com/">www.howtoinstallghost.com</a>. or see <a href="http://support.ghost.org/installation/">official documentation</a> for installing ghost </p>
+  
+
+  <h3>1. Install Theme</h3>
+
+    <ol>
+      <li>Move the <kbd>privado</kbd> folder from the downloaded bundle to the <kbd>/content/themes</kbd> folder within your Ghost installation</li>
+      <li>Restart Ghost</li>
+      <li>Login to your Ghost admin pages and go to <kbd>http://YOURGHOSTINSTALLATION.COM/ghost/settings/general/</kbd></li>
+      <li>Scroll to the "Theme" dropdown menu, select <kbd>Privado-1.0</kbd> and save</li>
+      <li>Go to <kbd>http://YOURGHOSTINSTALLATION.COM</kbd> to see the results.</li>
+    </ol>
+
+    <p>For further help visit <a href="http://support.ghost.org/user-guide/">official user guide</a> of Ghost</p>
+
+   <h3>2. Setting up Home and Blog</h3>
+
+   <p>You'll see your Home page is pretty ready actually. Just login to your Ghost dashboard and place your basic information on Settings menu like below :</p>
+   <p><img src="assets/images/home.png"></p>
+   <p>You are done with your home page.</p>
+
+   <h4>Blog Settings</h4>
+
+  <ol>
+    <li>Blog Title: Changes your Blog’s title.</li>
+    <li>Blog Description: Changes your Blog’s description. Theme reference @blog.description.</li>
+    <li>Blog Logo: Upload a Logo for your blog in either ‘.png’, ‘.jpg’ or ‘.gif’. Theme reference @blog.logo.</li>
+    <li>Blog Cover: Upload your blog cover image in either ‘.png’, ‘.jpg’ or ‘.gif’. Theme reference @blog.cover.</li>
+    <li>Email Address: This is the email admin notifications are sent too. It must be a valid email.</li>
+    <li>Posts per page: This is how many posts are displayed per page. This should be a numeric value.</li>
+    <li>Theme: This will list all the themes in your content/themes directory. Selecting one from the dropdown will change your blog’s look.</li>
+  </ol>
+
+<p>You can set your posts per page. We recommend 4/6/8 or any even number that suits most this theme.</p>
+
+   <h3>3. Navigation Settings</h3>
+
+   <p>This theme comes with Ghost new dynamic navigation. All you need to add Navigation item from your admin panel - </p>
+
+   <p><img src="assets/images/nav.png"></p>
+
+   <p>Don't forget to set your page URL same as you placed on navigation menu. </p>
+   <p>Now to enable a Menu, you have to create a static Page by just checking “Static Page” option and giving the appropriate URL that defined on theme like below : </p>
+
+   <p><img src="assets/images/menu.png"></p>
+
+   <h3>4. Post Image</h3>
+   <p>Post image is important for this theme. It's also displayed on Home Page post timeline. <br>
+    Add your post image like below : </p>
+    <p><img src="assets/images/post.png"></p>
+   <h3>5. Integrating Disqus Comment</h3>
+
+   <p>To enable disqus comment you have to replace your disqus code from <kbd>post.hbs</kbd>. Find the section commented with “{{! Discuss Comment Integration}}” and replace with your code. You will have to create a disqus account from their website : <a href="http://disqus.com">disqus.com</a></p>
+   <p><img src="assets/images/disqus.png"></p>
+
+
+ <p>Also configure the scripts from <kbd>default.hbs</kbd></p> 
+  <p><img src="assets/images/disqus2.png"></p>
+
+
+   <p> Here is a good write up for more details. <a href="http://blog.christophvoigt.com/enable-comments-on-ghost-with-disqus/">http://blog.christophvoigt.com/enable-comments-on-ghost-with-disqus/</a> </p>
+
+
+
+   <h3>6. Sidebar Settings</h3>
+
+  <p>This theme contains sidebar with different options. Open your <kbd>partials/sidebar.hbs</kbd> files to edit the sidebar contents.</p>
+
+  <p><img src="assets/images/sidebar.png"></p>
+
+  <p>You will see each single widget commented with  <kbd>< ! -- Single sidebar panel - - ></kbd>.</p>
+
+  <p>Just edit/remove the widget and that's it!</p>
+
+  <p>For Mailchimp Newsletter, use your own form action URL. Get it from <a href="http://www.mailchimp.com/">Mailchimp website</a> by login with your account.</p>
+
+  <p>Use your own Facebook page URL for Facebook Like widget. <a href="https://developers.facebook.com/docs/plugins/page-plugin"> New Facebook Page Plugin</a> used here as the old embed will stop working after June, 2015</p
+
+   <p>You can also use any <a href="http://fontawesome.io/icons/">Font Awesome Icons</a> anywhere that is also included with the theme.</p>
+    </section> 
+
+
+    <footer>
+
+      <p>Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
